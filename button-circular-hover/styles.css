@@ -17,6 +17,7 @@
   z-index: 1;
   overflow: hidden;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* circular element base styles */
