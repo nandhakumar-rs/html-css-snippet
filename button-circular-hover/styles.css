@@ -3,6 +3,14 @@
   font-family: sans-serif;
 }
 
+/* center the button to the view port */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /* button base styles */
 .button {
   border-radius: 10px;
