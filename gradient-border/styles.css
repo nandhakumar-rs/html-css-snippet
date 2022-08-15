@@ -1,0 +1,25 @@
+/* Set global font family to sans-serif */
+* {
+  font-family: sans-serif;
+}
+
+/* Center the Nav Bar to the view port */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Gradient Border */
+.gradient-border {
+  padding: 1rem;
+  border-bottom: 16px solid;
+  border-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border-image-slice: 1;
+  background: #2d363d;
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 0.5px;
+}
