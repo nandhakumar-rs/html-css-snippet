@@ -21,7 +21,7 @@ body {
   border: 0px;
   color: white;
   position: relative;
-  transition: color 0.6s ease-in-out; /* transition to fade text smoothly */
+  transition: color 0.6s ease-in-out, transform 0.2s ease-in-out; /* transition to fade text smoothly */
   z-index: 1;
   overflow: hidden;
   font-weight: bold;
@@ -45,11 +45,16 @@ body {
 
 /* scale circular element on button hover */
 .button:hover::before {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
 
 /* change button text color on hover*/
 .button:hover {
   color: #e43489;
+}
+
+/* change button text color on hover*/
+.button:active {
+  transform: scale(0.9);
 }
