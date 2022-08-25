@@ -1,0 +1,64 @@
+/* Set global font family to sans-serif */
+* {
+  font-family: sans-serif;
+}
+
+/* variables */
+:root {
+  --color: yellow;
+  --shadow-color: #fbbc05;
+  --animation-start-color: gray;
+}
+
+/* flexbox for the viewport */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #182c3e;
+}
+
+/* base icon width*/
+.icon {
+  width: 50px;
+}
+
+/* base style of svg path */
+.icon svg path {
+  fill: transparent;
+  stroke: var(--color);
+  stroke-width: 10px;
+  stroke-dasharray: 1620px;
+  stroke-dashoffset: 0;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  animation: lightning 2s ease-in-out infinite;
+
+}
+
+/* animation for lightning effect */
+@keyframes lightning {
+  0% {
+    stroke: var(--animation-start-color);
+    filter: none;
+    stroke-dashoffset: 0;
+  }
+
+  40% {
+    stroke-dashoffset: 1620px;
+  }
+
+  60% {
+    stroke-dashoffset: calc(1620px * 2);
+    fill: var(--color);
+    filter: drop-shadow(3px 3px 20px var(--shadow-color));
+  }
+
+  100% {
+    stroke: none;
+    fill: var(--color);
+    /* drop-shadow filter for lightning effect */
+    filter: drop-shadow(3px 3px 20px var(--shadow-color));
+  }
+}
